@@ -9,15 +9,225 @@
     <title>Главная</title>
 </head>
 <body>
-    <header class="flex flex-col w-full bg-white">
-        <div class="flex items-center py-4 px-10 border-b border-[#F3F3F3] justify-between">
+    <header class="flex flex-col w-full bg-white container mx-auto">
+        <div class="flex items-center py-4 border-b border-[#F3F3F3] justify-between">
             <div class="flex items-center gap-8 text-sm">
                 <a href="" class="text-[#6A983C]">Онлайн чат</a>
                 <a href="tel:+79278689938">+7 800 555 35 35</a>
                 <a href="mailto:info@example.com">info@example.com</a>
             </div>
+            <div class="flex items-center gap-8 text-sm text-[#6A983C]">
+                <a href="">Блог</a>
+                <a href="">О нас</a>
+                <a href="">Карьера</a>
+            </div>
+        </div>
+        <div class="flex items-center py-10 justify-between">
+            <p class="text-3xl font-bold">Лого</p>
+            <div class="flex items-center gap-9">
+                <img src="Assets/Images/header/profile.svg" alt="">
+                <div class="relative">
+                    <img src="Assets/Images/header/cart.svg" alt="">
+                    <div class="rounded-full w-4 h-4 absolute text-white bg-[#E5704B] flex items-center justify-center top-3 -left-1">
+                        <p class="text-sm w-fit">0</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>  
+
+    <div class="container mx-auto flex gap-8 py-16">
+        <div class="flex flex-col w-1/5">
+            <p class="text-xl font-semibold">Категории</p>
+            <div class="flex flex-col mt-4 text-[#6A983C] gap-3 grow">
+                <a href="" class="border-b border-[#6A983C] w-fit">Bakery</a>
+                <a href="" class="border-b border-[#6A983C] w-fit">Fruit and vegetables</a>
+                <a href="" class="border-b border-[#6A983C] w-fit">Meat and fish</a>
+                <a href="" class="border-b border-[#6A983C] w-fit">Drinks</a>
+                <a href="" class="border-b border-[#6A983C] w-fit">Kitchen</a>
+            </div>
+            <a href="" class="px-4 py-3 rounded-xl bg-[#F5F5F5] flex gap-2 mt-8 font-bold w-fit">
+                <span>Больше категорий</span>
+                <img src="Assets/Images/icons/arrow.svg" alt="">
+            </a>
+        </div>
+        <div class="w-2/5 flex flex-col bg-[#C8DEB3] bg-[url('Assets/Images/banners/bg.svg')] pt-12 p-8 rounded-xl bg-opacity-30">
+            <p class="text-sm font-semibold text-[#6A983C]">Баннер</p>
+            <p class="text-2xl font-semibold mt-1 grow">Место для заголовка</p>
+            <a class="bg-transparent border-2 border-[#92C064] flex gap-2 rounded-xl font-bold w-fit px-4 py-2 mt-2">
+                <span>Подробнее</span>
+                <img src="Assets/Images/icons/arrow-green.svg" alt="">
+            </a>   
+        </div>
+        <div class="w-2/5 flex flex-col bg-[#C8DEB3] bg-[url('Assets/Images/banners/bg.svg')] pt-12 p-8 rounded-xl bg-opacity-30">
+            <p class="text-sm font-semibold text-[#6A983C]">Баннер</p>
+            <p class="text-2xl font-semibold mt-1 grow">Место для заголовка</p>
+            <a class="bg-transparent border-2 border-[#92C064] flex gap-2 rounded-xl font-bold w-fit px-4 py-2 mt-2">
+                <span>Подробнее</span>
+                <img src="Assets/Images/icons/arrow-green.svg" alt="">
+            </a>   
+        </div>
+    </div>
+
+    <div class="container mx-auto flex gap-8 py-16">
+        <div class="flex flex-col w-1/5">
+            <p class="text-xl font-semibold">Продаваемые товары</p>
+            <div class="flex flex-col mt-4 text-[#6A983C] gap-3 grow">
+                <a href="" class="border-b border-[#6A983C] w-fit">Bakery</a>
+                <a href="" class="border-b border-[#6A983C] w-fit">Fruit and vegetables</a>
+                <a href="" class="border-b border-[#6A983C] w-fit">Meat and fish</a>
+                <a href="" class="border-b border-[#6A983C] w-fit">Drinks</a>
+                <a href="" class="border-b border-[#6A983C] w-fit">Kitchen</a>
+            </div>
+            <a href="" class="px-4 py-3 rounded-xl bg-[#F5F5F5] flex gap-2 mt-8 font-bold w-fit">
+                <span>Больше категорий</span>
+                <img src="Assets/Images/icons/arrow.svg" alt="">
+            </a>
+        </div>
+        <div class="w-4/5 grid grid-cols-3 gap-8">
+            <div class="flex flex-col border border-[#D1D1D1] rounded-xl bg-white p-4">
+                <img src="Assets/Images/products/item.png" alt="">
+                <div class="flex flex-col mt-4">
+                    <p>Название товара</p>
+                    <p class="text-[#575757] text-sm mt-1">Место для небольшого описания</p>
+                </div>
+                <div class="flex mt-4 items-center justify-between">
+                    <p class="font-semibold text-xl"><span>1.48</span> RUB</p>
+                    <button class="text-white py-1 px-3 bg-[#6A983C] border-2 border-[#46760A] rounded-xl">Купить</button>
+                </div>
+            </div>
+            <div class="flex flex-col border border-[#D1D1D1] rounded-xl bg-white p-4">
+                <img src="Assets/Images/products/item.png" alt="">
+                <div class="flex flex-col mt-4">
+                    <p>Название товара</p>
+                    <p class="text-[#575757] text-sm mt-1">Место для небольшого описания</p>
+                </div>
+                <div class="flex mt-4 items-center justify-between">
+                    <p class="font-semibold text-xl"><span>1.48</span> RUB</p>
+                    <button class="text-white py-1 px-3 bg-[#6A983C] border-2 border-[#46760A] rounded-xl">Купить</button>
+                </div>
+            </div>
+            <div class="flex flex-col border border-[#D1D1D1] rounded-xl bg-white p-4">
+                <img src="Assets/Images/products/item.png" alt="">
+                <div class="flex flex-col mt-4">
+                    <p>Название товара</p>
+                    <p class="text-[#575757] text-sm mt-1">Место для небольшого описания</p>
+                </div>
+                <div class="flex mt-4 items-center justify-between">
+                    <p class="font-semibold text-xl"><span>1.48</span> RUB</p>
+                    <button class="text-white py-1 px-3 bg-[#6A983C] border-2 border-[#46760A] rounded-xl">Купить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mx-auto flex gap-8 py-16">
+        <div class="flex flex-col w-1/5">
+            <p class="text-xl font-semibold">Продаваемые товары</p>
+            <div class="flex flex-col mt-4 text-[#6A983C] gap-3 grow">
+                <a href="" class="border-b border-[#6A983C] w-fit">Bakery</a>
+                <a href="" class="border-b border-[#6A983C] w-fit">Fruit and vegetables</a>
+                <a href="" class="border-b border-[#6A983C] w-fit">Meat and fish</a>
+                <a href="" class="border-b border-[#6A983C] w-fit">Drinks</a>
+                <a href="" class="border-b border-[#6A983C] w-fit">Kitchen</a>
+            </div>
+            <a href="" class="px-4 py-3 rounded-xl bg-[#F5F5F5] flex gap-2 mt-8 font-bold w-fit">
+                <span>Больше категорий</span>
+                <img src="Assets/Images/icons/arrow.svg" alt="">
+            </a>
+        </div>
+        <div class="w-4/5 grid grid-cols-3 gap-8">
+            <div class="flex flex-col border border-[#D1D1D1] rounded-xl bg-white p-4">
+                <img src="Assets/Images/products/item.png" alt="">
+                <div class="flex flex-col mt-4">
+                    <p>Название товара</p>
+                    <p class="text-[#575757] text-sm mt-1">Место для небольшого описания</p>
+                </div>
+                <div class="flex mt-4 items-center justify-between">
+                    <p class="font-semibold text-xl"><span>1.48</span> RUB</p>
+                    <button class="text-white py-1 px-3 bg-[#6A983C] border-2 border-[#46760A] rounded-xl">Купить</button>
+                </div>
+            </div>
+            <div class="flex flex-col border border-[#D1D1D1] rounded-xl bg-white p-4">
+                <img src="Assets/Images/products/item.png" alt="">
+                <div class="flex flex-col mt-4">
+                    <p>Название товара</p>
+                    <p class="text-[#575757] text-sm mt-1">Место для небольшого описания</p>
+                </div>
+                <div class="flex mt-4 items-center justify-between">
+                    <p class="font-semibold text-xl"><span>1.48</span> RUB</p>
+                    <button class="text-white py-1 px-3 bg-[#6A983C] border-2 border-[#46760A] rounded-xl">Купить</button>
+                </div>
+            </div>
+            <div class="flex flex-col border border-[#D1D1D1] rounded-xl bg-white p-4">
+                <img src="Assets/Images/products/item.png" alt="">
+                <div class="flex flex-col mt-4">
+                    <p>Название товара</p>
+                    <p class="text-[#575757] text-sm mt-1">Место для небольшого описания</p>
+                </div>
+                <div class="flex mt-4 items-center justify-between">
+                    <p class="font-semibold text-xl"><span>1.48</span> RUB</p>
+                    <button class="text-white py-1 px-3 bg-[#6A983C] border-2 border-[#46760A] rounded-xl">Купить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto flex flex-col gap-8 py-16">
+        <div class="flex justify-between items-center">
+            <p class="text-xl font-semibold">Секции</p>
+            <a href="" class="flex gap-2">
+                <span class="font-bold">Кнопка</span>
+                <img src="Assets/Images/icons/arrow-green.svg" alt="">
+            </a>
+        </div>
+        <div class="grid grid-cols-4 gap-8 w-full">
+            <div class="flex flex-col border border-[#D1D1D1] rounded-xl bg-white p-4">
+                <img src="Assets/Images/products/item.png" alt="">
+                <div class="flex flex-col mt-4">
+                    <p>Название товара</p>
+                    <p class="text-[#575757] text-sm mt-1">Место для небольшого описания</p>
+                </div>
+                <div class="flex mt-4 items-center justify-between">
+                    <p class="font-semibold text-xl"><span>1.48</span> RUB</p>
+                    <button class="text-white py-1 px-3 bg-[#6A983C] border-2 border-[#46760A] rounded-xl">Купить</button>
+                </div>
+            </div>
+            <div class="flex flex-col border border-[#D1D1D1] rounded-xl bg-white p-4">
+                <img src="Assets/Images/products/item.png" alt="">
+                <div class="flex flex-col mt-4">
+                    <p>Название товара</p>
+                    <p class="text-[#575757] text-sm mt-1">Место для небольшого описания</p>
+                </div>
+                <div class="flex mt-4 items-center justify-between">
+                    <p class="font-semibold text-xl"><span>1.48</span> RUB</p>
+                    <button class="text-white py-1 px-3 bg-[#6A983C] border-2 border-[#46760A] rounded-xl">Купить</button>
+                </div>
+            </div>
+            <div class="flex flex-col border border-[#D1D1D1] rounded-xl bg-white p-4">
+                <img src="Assets/Images/products/item.png" alt="">
+                <div class="flex flex-col mt-4">
+                    <p>Название товара</p>
+                    <p class="text-[#575757] text-sm mt-1">Место для небольшого описания</p>
+                </div>
+                <div class="flex mt-4 items-center justify-between">
+                    <p class="font-semibold text-xl"><span>1.48</span> RUB</p>
+                    <button class="text-white py-1 px-3 bg-[#6A983C] border-2 border-[#46760A] rounded-xl">Купить</button>
+                </div>
+            </div>
+            <div class="flex flex-col border border-[#D1D1D1] rounded-xl bg-white p-4">
+                <img src="Assets/Images/products/item.png" alt="">
+                <div class="flex flex-col mt-4">
+                    <p>Название товара</p>
+                    <p class="text-[#575757] text-sm mt-1">Место для небольшого описания</p>
+                </div>
+                <div class="flex mt-4 items-center justify-between">
+                    <p class="font-semibold text-xl"><span>1.48</span> RUB</p>
+                    <button class="text-white py-1 px-3 bg-[#6A983C] border-2 border-[#46760A] rounded-xl">Купить</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer></footer>
     
