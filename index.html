@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="Assets/CSS/custom.css">
     <title>Главная</title>
@@ -27,6 +28,50 @@
         </div>
         <div class="flex items-center py-10 justify-between">
             <p class="text-3xl font-bold">Лавка</p>
+            <div class="lg:w-1/2 py-2 px-4 bg-[#F9F9F9] rounded-2xl items-center gap-6 border-2 border-[#D1D1D1] hidden md:flex">
+                <button id="dropdownDefaultButton0" data-dropdown-toggle="dropdown0" class="min-w-36 text-lg font-semibold rounded-lg text-center gap-1 flex items-center" type="button">
+                    Все категории
+                    <img src="Assets/Images/icons/arow-down-green.svg" alt="">
+                </button>
+                <div id="dropdown0" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Электронника</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Фрукты и овощи</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Бытовая техника</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Напитки</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Товары для супер-взрослых</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Товары для супер-детей</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Автотовары</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Здоровье</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Зоотовары</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-[#D1D1D1] w-[1.5px] h-6"></div>
+                <form action="" class="grow relative">
+                    <input type="text" class="bg-transparent px-2 focus:outline-0 w-full" placeholder="Поиск...">
+                    <button class="absolute w-5 right-0">
+                        <img src="Assets/Images/icons/search.svg" alt="" class="w-5">
+                    </button>
+                </form>
+            </div>
             <div class="flex items-center gap-9">
                 <img src="Assets/Images/header/profile.svg" alt="">
                 <div class="relative">
@@ -51,16 +96,197 @@
         <div class="w-full h-screen fixed top-0 right-0 hidden z-10 bg-gray-900 opacity-70" id="overlay"></div>
     </header>  
 
+    <div class="w-full bg-[#F9F9F9] px-4 md:gap-4 lg:gap-8 xl:gap-10 py-4 items-center justify-center hidden md:flex">
+        <button id="dropdownDefaultButton1" data-dropdown-toggle="dropdown1" class="font-medium rounded-lg text-sm text-center flex items-center gap-1" type="button">
+            Электроника
+            <img src="Assets/Images/icons/arow-down-green.svg" alt="">
+        </button>
+        <button id="dropdownDefaultButton2" data-dropdown-toggle="dropdown2" class="font-medium rounded-lg text-sm text-center flex items-center gap-1" type="button">
+            Фрукты и овощи
+            <img src="Assets/Images/icons/arow-down-green.svg" alt="">
+        </button>
+        <button id="dropdownDefaultButton3" data-dropdown-toggle="dropdown3" class="font-medium rounded-lg text-sm text-center flex items-center gap-1" type="button">
+            Бытовая техника
+            <img src="Assets/Images/icons/arow-down-green.svg" alt="">
+        </button>
+        <button id="dropdownDefaultButton4" data-dropdown-toggle="dropdown4" class="font-medium rounded-lg text-sm text-center flex items-center gap-1" type="button">
+            Напитки
+            <img src="Assets/Images/icons/arow-down-green.svg" alt="">
+        </button>
+        <button id="dropdownDefaultButton5" data-dropdown-toggle="dropdown5" class="font-medium rounded-lg text-sm text-center hidden xl:flex items-center gap-1" type="button">
+            Товары для супер-взрослых
+            <img src="Assets/Images/icons/arow-down-green.svg" alt="">
+        </button>
+        <button id="dropdownDefaultButton6" data-dropdown-toggle="dropdown6" class="font-medium rounded-lg text-sm text-center hidden xl:flex items-center gap-1" type="button">
+            Товары для супер-детей
+            <img src="Assets/Images/icons/arow-down-green.svg" alt="">
+        </button>
+        <button id="dropdownDefaultButton7" data-dropdown-toggle="dropdown7" class="font-medium rounded-lg text-sm text-center flex items-center gap-1" type="button">
+            Автотовары
+            <img src="Assets/Images/icons/arow-down-green.svg" alt="">
+        </button>
+        <button id="dropdownDefaultButton8" data-dropdown-toggle="dropdown8" class="font-medium rounded-lg text-sm text-center flex items-center gap-1" type="button">
+            Здоровье
+            <img src="Assets/Images/icons/arow-down-green.svg" alt="">
+        </button>
+        <button id="dropdownDefaultButton9" data-dropdown-toggle="dropdown9" class="font-medium rounded-lg text-sm text-center hidden lg:flex items-center gap-1" type="button">
+            Зоотовары
+            <img src="Assets/Images/icons/arow-down-green.svg" alt="">
+        </button>
+        <div id="dropdown1" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Мобильные телефоны</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Компьютеры</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Наушники</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Сетевое оборудование</a>
+            </li>
+            </ul>
+        </div>
+        <div id="dropdown2" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Ягоды</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Фрукты</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Зерновые</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Овощи</a>
+            </li>
+            </ul>
+        </div>
+        <div id="dropdown3" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Для кухни</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Приготовление кофе</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Для красоты</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Климатическая техника</a>
+            </li>
+            </ul>
+        </div>
+        <div id="dropdown4" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Минеральная вода</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Соки</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Лимонады</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Энергетические напитки</a>
+            </li>
+            </ul>
+        </div>
+        <div id="dropdown5" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Карамель</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Мази для суставов</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Витамины</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Пояса из собачьей шерсти</a>
+            </li>
+            </ul>
+        </div>
+        <div id="dropdown6" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Игрушки</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Костюмы</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Книги</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Детское питание</a>
+            </li>
+            </ul>
+        </div>
+        <div id="dropdown7" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Колёса</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Автозапчасти</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Автоинструмент</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Тюнинг</a>
+            </li>
+            </ul>
+        </div>
+        <div id="dropdown8" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Лекарства</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Оптика</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Стоматология</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Антисептические средства</a>
+            </li>
+            </ul>
+        </div>
+        <div id="dropdown9" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Корма</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Наполнители</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Гигиена</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-[#F9F9F9]">Ветеринарные средства</a>
+            </li>
+            </ul>
+        </div>
+    </div>
+
     <div class="container mx-auto px-4 flex flex-col lg:flex-row gap-8 py-8 lg:py-16">
         <div class="flex flex-col lg:w-1/5">
             <p class="text-xl font-semibold">Категории</p>
             <div class="flex flex-col md:flex-row lg:flex-col md:items-center lg:items-start">
                 <div class="flex flex-col md:flex-row lg:flex-col mt-4 md:mt-0 lg:mt-4 text-[#6A983C] gap-3 grow">
-                    <a href="" class="border-b border-[#6A983C] w-fit">Bakery</a>
-                    <a href="" class="border-b border-[#6A983C] w-fit">Fruit and vegetables</a>
-                    <a href="" class="border-b border-[#6A983C] w-fit">Meat and fish</a>
-                    <a href="" class="border-b border-[#6A983C] w-fit">Drinks</a>
-                    <a href="" class="border-b border-[#6A983C] w-fit">Kitchen</a>
+                    <a href="" class="border-b border-[#6A983C] w-fit">Электроника</a>
+                    <a href="" class="border-b border-[#6A983C] w-fit">Фрукты и овощи</a>
+                    <a href="" class="border-b border-[#6A983C] w-fit">Бытовая техника</a>
                 </div>
                 <a href="" class="px-4 py-3 rounded-xl bg-[#F5F5F5] flex gap-2 mt-8 md:mt-0 lg:mt-8 font-bold w-fit">
                     <span>Больше категорий</span>
@@ -91,11 +317,9 @@
             <p class="text-xl font-semibold">Продаваемые товары</p>
             <div class="flex flex-col md:flex-row lg:flex-col md:items-center lg:items-start">
                 <div class="flex flex-col md:flex-row lg:flex-col mt-4 md:mt-0 lg:mt-4 text-[#6A983C] gap-3 grow">
-                    <a href="" class="border-b border-[#6A983C] w-fit">Bakery</a>
-                    <a href="" class="border-b border-[#6A983C] w-fit">Fruit and vegetables</a>
-                    <a href="" class="border-b border-[#6A983C] w-fit">Meat and fish</a>
-                    <a href="" class="border-b border-[#6A983C] w-fit">Drinks</a>
-                    <a href="" class="border-b border-[#6A983C] w-fit">Kitchen</a>
+                    <a href="" class="border-b border-[#6A983C] w-fit">Напитки</a>
+                    <a href="" class="border-b border-[#6A983C] w-fit">Товары для супер-взрослых</a>
+                    <a href="" class="border-b border-[#6A983C] w-fit">Товары для супер-детей</a>
                 </div>
                 <a href="" class="px-4 py-3 rounded-xl bg-[#F5F5F5] flex gap-2 mt-8 md:mt-0 lg:mt-8 font-bold w-fit">
                     <span>Больше категорий</span>
@@ -145,11 +369,9 @@
             <p class="text-xl font-semibold">Лучшее от продавцов</p>
             <div class="flex flex-col md:flex-row lg:flex-col md:items-center lg:items-start">
                 <div class="flex flex-col md:flex-row lg:flex-col mt-4 md:mt-0 lg:mt-4 text-[#6A983C] gap-3 grow">
-                    <a href="" class="border-b border-[#6A983C] w-fit">Bakery</a>
-                    <a href="" class="border-b border-[#6A983C] w-fit">Fruit and vegetables</a>
-                    <a href="" class="border-b border-[#6A983C] w-fit">Meat and fish</a>
-                    <a href="" class="border-b border-[#6A983C] w-fit">Drinks</a>
-                    <a href="" class="border-b border-[#6A983C] w-fit">Kitchen</a>
+                    <a href="" class="border-b border-[#6A983C] w-fit">Автотовары</a>
+                    <a href="" class="border-b border-[#6A983C] w-fit">Здоровье</a>
+                    <a href="" class="border-b border-[#6A983C] w-fit">Зоотовары</a>
                 </div>
                 <a href="" class="px-4 py-3 rounded-xl bg-[#F5F5F5] flex gap-2 mt-8 md:mt-0 lg:mt-8 font-bold w-fit">
                     <span>Больше категорий</span>
@@ -194,13 +416,56 @@
         </div>
     </div>
 
-    <div class="w-full flex flex-col gap-8 py-8 lg:py-16">
-        <div class="flex justify-between items-center container mx-auto px-4">
+    <div class="w-full flex flex-col gap-8 py-8 lg:py-16 px-4">
+        <div class="flex justify-between items-center container mx-auto">
             <p class="text-xl font-semibold">Покупатели говорят</p>
             <a href="" class="flex gap-2">
                 <span class="font-bold">Кнопка</span>
                 <img src="Assets/Images/icons/arrow-green.svg" alt="">
             </a>
+        </div>
+        <div class="w-full overflow-hidden">
+            <div class="swiper swiper-reviews w-full h-60 min-[425px]:h-56 overflow-visible">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper w-full">
+                  <!-- Slides -->
+                  <div class="swiper-slide w-fit">
+                    <div class="flex flex-col rounded-xl border border-gray-300 px-4 py-3 md:px-8 md:py-6 items-center text-center gap-6 relative h-48 min-[425px]:h-44">
+                        <p class="md:w-72">“ Это супер пространство для ваших клиентов. Не волнуйтесь, это работает гладко, как часы. Вы получите все, что вам нужно, написав текст здесь “</p>
+                        <p class="text-gray-400">Имя пользователя</p>
+                        <img src="Assets/Images/reviews/1.png" alt="" class="absolute -bottom-10">
+                    </div>
+                  </div>
+                  <div class="swiper-slide w-fit">
+                    <div class="flex flex-col rounded-xl border border-gray-300 px-4 py-3 md:px-8 md:py-6 items-center text-center gap-6 relative h-48 min-[425px]:h-44">
+                        <p class="md:w-72">“ Это супер пространство для ваших клиентов. Не волнуйтесь, это работает гладко, как часы. Вы получите все, что вам нужно, написав текст здесь “</p>
+                        <p class="text-gray-400">Имя пользователя</p>
+                        <img src="Assets/Images/reviews/2.png" alt="" class="absolute -bottom-10">
+                    </div>
+                  </div>
+                  <div class="swiper-slide w-fit">
+                    <div class="flex flex-col rounded-xl border border-gray-300 px-4 py-3 md:px-8 md:py-6 items-center text-center gap-6 relative h-48 min-[425px]:h-44">
+                        <p class="md:w-72">“ Это супер пространство для ваших клиентов. Не волнуйтесь, это работает гладко, как часы. Вы получите все, что вам нужно, написав текст здесь “</p>
+                        <p class="text-gray-400">Имя пользователя</p>
+                        <img src="Assets/Images/reviews/3.png" alt="" class="absolute -bottom-10">
+                    </div>
+                  </div>
+                  <div class="swiper-slide w-fit">
+                    <div class="flex flex-col rounded-xl border border-gray-300 px-4 py-3 md:px-8 md:py-6 items-center text-center gap-6 relative h-48 min-[425px]:h-44">
+                        <p class="md:w-72">“ Это супер пространство для ваших клиентов. Не волнуйтесь, это работает гладко, как часы. Вы получите все, что вам нужно, написав текст здесь “</p>
+                        <p class="text-gray-400">Имя пользователя</p>
+                        <img src="Assets/Images/reviews/4.png" alt="" class="absolute -bottom-10">
+                    </div>
+                  </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev swiper-reviews-prev after:hidden bg-black rounded-r-xl -left-4">
+                    <img src="Assets/Images/swiper/prev.svg" alt="">
+                </div>
+                <div class="swiper-button-next swiper-reviews-next after:hidden bg-black rounded-l-xl -right-4">
+                    <img src="Assets/Images/swiper/next.svg" alt="">
+                </div>
+              </div>
         </div>
     </div>
 
@@ -376,6 +641,8 @@
     </footer>
     
     <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="Assets/JS/custom.js"></script>
+    <script src="Assets/JS/swiper.js"></script>
 </body>
 </html>
