@@ -293,9 +293,152 @@
         <p class="text-3xl font-semibold">Каталог</p>
     </div>
 
-    <div class="container mx-auto px-4 py-8 lg:py-16 flex gap-8">
-        <div class="lg:w-1/4 flex flex-col">
-
+    <div class="container mx-auto px-4 py-8 lg:py-16 flex gap-8 items-start">
+        <div class="hidden lg:flex lg:w-1/4 flex-col gap-12">
+            <div class="flex flex-col gap-3">
+                <p class="text-xl font-semibold">Категории</p>
+                <a href="">Напитки</a>
+                <a href="">Фрукты и овощи</a>
+                <a href="">Зоотовары</a>
+                <a href="">Автотовары</a>
+            </div>
+            <div class="flex flex-col gap-3">
+                <p class="text-xl font-semibold">Бренды</p>
+                <div class="flex items-center gap-2">
+                    <input id="c1" name="categories" type="checkbox" value="" class="checked:bg-[#6A983C] checked:ring-0 focus:ring-0">
+                    <label for="c1" class="cursor-pointer">Бренд 1</label>
+                </div>
+                <div class="flex items-center gap-2">
+                    <input id="c2" name="categories" type="checkbox" value="" class="checked:bg-[#6A983C] checked:ring-0 focus:ring-0">
+                    <label for="c2" class="cursor-pointer">Бренд 2</label>
+                </div>
+                <div class="flex items-center gap-2">
+                    <input id="c3" name="categories" type="checkbox" value="" class="checked:bg-[#6A983C] checked:ring-0 focus:ring-0">
+                    <label for="c3" class="cursor-pointer">Бренд 3</label>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4">
+                <p class="text-xl font-semibold">Цена</p>
+                <div class="py-2 relative w-full">
+                    <div class="slider-track"></div>
+                    <input type="range" min="200" max="15000" value="200" id="slider-1" oninput="slideOne()">
+                    <input type="range" min="200" max="15000" value="5000" id="slider-2" oninput="slideTwo()">
+                </div>
+                <div class="flex flex-row justify-between mt-2 w-full">
+                    <div class="text-base flex items-center">
+                        <p class="px-1">от</p>
+                        <input class="h-6 w-16 px-2 text-center rounded-xl border border-[#6A983C]" id="range-1" data-from="15" value="200"/>
+                        <p class="px-1">₽</p>
+                    </div>
+                    <div class="text-base flex items-center">
+                        <p class="px-1">до</p>
+                        <input class="h-6 w-16 px-2 text-center rounded-xl border border-[#6A983C]" id="range-2" data-before="150" value="5000"/>
+                        <p class="px-1">₽</p>
+                    </div>
+                </div>
+                <button class="text-white py-1 px-3 bg-[#6A983C] border-2 border-[#46760A] rounded-xl w-fit">Применить</button>
+            </div>
+        </div>
+        <div class="lg:w-3/4 grid grid-cols-3 gap-8">
+            <div class="flex flex-col border border-[#D1D1D1] rounded-xl bg-white p-4">
+                <img src="../Assets/Images/products/item.png" alt="">
+                <div class="flex flex-col mt-4">
+                    <p>Название товара</p>
+                    <p class="text-[#575757] text-sm mt-1">Место для небольшого описания</p>
+                </div>
+                <div class="flex mt-4 items-center justify-between">
+                    <p class="font-semibold text-xl"><span>1.48</span> RUB</p>
+                    <button class="text-white py-1 px-3 bg-[#6A983C] border-2 border-[#46760A] rounded-xl">Купить</button>
+                </div>
+            </div>
+            <div class="flex flex-col border border-[#D1D1D1] rounded-xl bg-white p-4">
+                <img src="../Assets/Images/products/item.png" alt="">
+                <div class="flex flex-col mt-4">
+                    <p>Название товара</p>
+                    <p class="text-[#575757] text-sm mt-1">Место для небольшого описания</p>
+                </div>
+                <div class="flex mt-4 items-center justify-between">
+                    <p class="font-semibold text-xl"><span>1.48</span> RUB</p>
+                    <button class="text-white py-1 px-3 bg-[#6A983C] border-2 border-[#46760A] rounded-xl">Купить</button>
+                </div>
+            </div>
+            <div class="flex flex-col border border-[#D1D1D1] rounded-xl bg-white p-4">
+                <img src="../Assets/Images/products/item.png" alt="">
+                <div class="flex flex-col mt-4">
+                    <p>Название товара</p>
+                    <p class="text-[#575757] text-sm mt-1">Место для небольшого описания</p>
+                </div>
+                <div class="flex mt-4 items-center justify-between">
+                    <p class="font-semibold text-xl"><span>1.48</span> RUB</p>
+                    <button class="text-white py-1 px-3 bg-[#6A983C] border-2 border-[#46760A] rounded-xl">Купить</button>
+                </div>
+            </div>
+            <div class="flex flex-col border border-[#D1D1D1] rounded-xl bg-white p-4">
+                <img src="../Assets/Images/products/item.png" alt="">
+                <div class="flex flex-col mt-4">
+                    <p>Название товара</p>
+                    <p class="text-[#575757] text-sm mt-1">Место для небольшого описания</p>
+                </div>
+                <div class="flex mt-4 items-center justify-between">
+                    <p class="font-semibold text-xl"><span>1.48</span> RUB</p>
+                    <button class="text-white py-1 px-3 bg-[#6A983C] border-2 border-[#46760A] rounded-xl">Купить</button>
+                </div>
+            </div>
+            <div class="flex flex-col border border-[#D1D1D1] rounded-xl bg-white p-4">
+                <img src="../Assets/Images/products/item.png" alt="">
+                <div class="flex flex-col mt-4">
+                    <p>Название товара</p>
+                    <p class="text-[#575757] text-sm mt-1">Место для небольшого описания</p>
+                </div>
+                <div class="flex mt-4 items-center justify-between">
+                    <p class="font-semibold text-xl"><span>1.48</span> RUB</p>
+                    <button class="text-white py-1 px-3 bg-[#6A983C] border-2 border-[#46760A] rounded-xl">Купить</button>
+                </div>
+            </div>
+            <div class="flex flex-col border border-[#D1D1D1] rounded-xl bg-white p-4">
+                <img src="../Assets/Images/products/item.png" alt="">
+                <div class="flex flex-col mt-4">
+                    <p>Название товара</p>
+                    <p class="text-[#575757] text-sm mt-1">Место для небольшого описания</p>
+                </div>
+                <div class="flex mt-4 items-center justify-between">
+                    <p class="font-semibold text-xl"><span>1.48</span> RUB</p>
+                    <button class="text-white py-1 px-3 bg-[#6A983C] border-2 border-[#46760A] rounded-xl">Купить</button>
+                </div>
+            </div>
+            <div class="flex flex-col border border-[#D1D1D1] rounded-xl bg-white p-4">
+                <img src="../Assets/Images/products/item.png" alt="">
+                <div class="flex flex-col mt-4">
+                    <p>Название товара</p>
+                    <p class="text-[#575757] text-sm mt-1">Место для небольшого описания</p>
+                </div>
+                <div class="flex mt-4 items-center justify-between">
+                    <p class="font-semibold text-xl"><span>1.48</span> RUB</p>
+                    <button class="text-white py-1 px-3 bg-[#6A983C] border-2 border-[#46760A] rounded-xl">Купить</button>
+                </div>
+            </div>
+            <div class="flex flex-col border border-[#D1D1D1] rounded-xl bg-white p-4">
+                <img src="../Assets/Images/products/item.png" alt="">
+                <div class="flex flex-col mt-4">
+                    <p>Название товара</p>
+                    <p class="text-[#575757] text-sm mt-1">Место для небольшого описания</p>
+                </div>
+                <div class="flex mt-4 items-center justify-between">
+                    <p class="font-semibold text-xl"><span>1.48</span> RUB</p>
+                    <button class="text-white py-1 px-3 bg-[#6A983C] border-2 border-[#46760A] rounded-xl">Купить</button>
+                </div>
+            </div>
+            <div class="flex flex-col border border-[#D1D1D1] rounded-xl bg-white p-4">
+                <img src="../Assets/Images/products/item.png" alt="">
+                <div class="flex flex-col mt-4">
+                    <p>Название товара</p>
+                    <p class="text-[#575757] text-sm mt-1">Место для небольшого описания</p>
+                </div>
+                <div class="flex mt-4 items-center justify-between">
+                    <p class="font-semibold text-xl"><span>1.48</span> RUB</p>
+                    <button class="text-white py-1 px-3 bg-[#6A983C] border-2 border-[#46760A] rounded-xl">Купить</button>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -353,6 +496,7 @@
         <div class="text-sm">Copyright © 2023. <a href="" class="underline">KP</a></div>
     </footer>
     
+    <script src="../Assets/JS/range.js"></script>
     <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="../Assets/JS/custom.js"></script>
