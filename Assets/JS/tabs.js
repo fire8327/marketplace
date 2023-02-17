@@ -15,7 +15,7 @@ const tabElements = [
 // options with default values
 const options = {
     defaultTabId: 'description',
-    activeClasses: 'text-blue-600 hover:text-blue-600 border-blue-600',
+    activeClasses: 'text-[#6A983C] hover:text-[#6A983C] border-[#6A983C]',
     inactiveClasses: 'text-gray-500 hover:text-gray-600 border-gray-100 hover:border-gray-300',
     onShow: () => {
         console.log('tab is shown');
