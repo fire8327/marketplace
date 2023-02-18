@@ -28,3 +28,15 @@ const swiper = new Swiper('.swiper-reviews', {
         },
       }
   });
+const swiper2 = new Swiper('.swiper-product', {
+    // Optional parameters
+    rewind: true,
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-next',
+      prevEl: '.swiper-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    }
+  });
